@@ -19,6 +19,81 @@ window.onmousedown=right;
 <!-- Fin de AntiCopy -->
 
 
+<style>
+.animado {position:absolute;visibility:visible;top:-50px;font-size:10pt;font-family:Arial;font-weight:bold;color:black;}
+</style>
+<script language=JavaScript>
+var x,y
+var tempo=10
+var espera=0
+
+var texto="Samu330"
+texto=texto.split("")
+
+var xpos=new Array()
+for (i=0;i<=texto.length-1;i++) {
+xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=texto.length-1;i++) {
+ypos[i]=-50
+}
+
+function seguir(e){
+x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+espera=1
+}
+
+function animar_cursor() {
+if (espera==1 && document.all) {
+for (i=texto.length-1; i>=1; i--) {
+xpos[i]=xpos[i-1]+tempo
+ypos[i]=ypos[i-1]
+}
+xpos[0]=x+tempo
+ypos[0]=y
+
+for (i=0; i<texto.length-1; i++) {
+var camada = eval("span"+(i)+".style")
+camada.posLeft=xpos[i]
+camada.posTop=ypos[i]
+}
+}
+
+else if (espera==1 && document.layers) {
+for (i=texto.length-1; i>=1; i--) {
+xpos[i]=xpos[i-1]+tempo
+ypos[i]=ypos[i-1]
+}
+xpos[0]=x+tempo
+ypos[0]=y
+
+for (i=0; i<texto.length-1; i++) {
+var camada = eval("document.span"+i)
+camada.left=xpos[i]
+camada.top=ypos[i]
+}
+}
+var timer=setTimeout("animar_cursor()",30)
+}
+
+</script>
+<script Language=JavaScript>
+for (i=0;i<=texto.length-1;i++) {
+document.write("<span id='span"+i+"' class='animado'>")
+document.write(texto[i])
+document.write("</span>")
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = seguir;
+animar_cursor()
+</script>
+
 <html>
 <head>
   <title> Samu330 </title>
@@ -33,20 +108,6 @@ window.onmousedown=right;
     <center> <div class="n"><p>    <b><font color="#FF00FF" face="arial" size="4"><marquee width="400" scrollamount="5" bgcolor="#FFFFFF">Simi Test</marquee></font></b></p></center>      
       
       
-<!-- Funcion de Hora -->
-<script language="JavaScript">
-<!--
-mensaje=" |======| www.CheNico.com "
-function hora() {
-var h = new Date();
-window.status="|======| "
-+ h.getHours() +":"+ h.getMinutes() +"" +mensaje ;
-window.setTimeout('hora()',100);
-}
-hora()
-//-->
-</script>
-<!-- -->
             
       </header>
       <body>
@@ -87,12 +148,6 @@ Establecer como página de inicio</U></FONT></A>
       
       <h1> Samu330 Pg </h1>
         
-
-<a name="1"></a><A
-
-onclick="window.open('assets/img1.png','Estructuras','toolbar=no,location=no,scrollbars=yes,directories=
-no,status=no,menubar=no,resizable=no,width=400,height=475');" 
-href="#1"><b><font face="Verdana" size="2">Ejemplo</font></b></a>
       
 
   </script></div><div class="n"><div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="https://key0.cc/images/small/84545_79962d312d1cf9d9b1121cd9db8f9c05.png" width="90" height="90" style=position:fixed;bottom:0;right:0;/></a> </div>
