@@ -18,7 +18,28 @@ window.onmousedown=right;
 </script>
 <!-- Fin de AntiCopy -->
 
-
+<script language="JavaScript">
+tempo = 10;
+chars = 5;
+texto = "-- Samu330 --";
+wtexto = new Array(33);
+wtexto[0] = texto;
+blnk = " ";//Mantén estos espacios
+for (i = 1; i < 32; i++) {
+b = blnk.substring(0, i);
+wtexto[i] = "";
+for (j = 0; j < texto.length; j++) wtexto[i] = wtexto[i] + texto.charAt(j) + b;
+}
+function animastatus() {
+if (chars > -1) str = wtexto[chars];
+else str = wtexto[0];
+if (chars-- < -40) chars = 31;
+status = str;
+clearTimeout(tempo);
+tempo = setTimeout("animastatus()", 150);
+}
+animastatus()
+</script>
 
 <html>
 <head>
@@ -75,18 +96,32 @@ document.write("<b><font face=arial size=2 color=#000000>¡Hola "+mensagem+"! Bi
       <!-- Hora -->
       <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"><span style="color:gray;">Hora actual en</span><br />Mexico City, México</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FMexico_City" width="100%" height="115" frameborder="0" seamless></iframe> </div>
       <!-- Fin de Hora -->
+        
+        
+<script language="JavaScript">
+<!--
+function esIE30(){
+var browserType=navigator.userAgent;
+if (browserType.indexOf("MSIE")==-1)
+return false;
+else
+return true;
+}
+ 
+<!-- Cargar la página según el explorador -->
+function cargar(){
+if (esIE30())
+window.location.href="indice_ie.htm";
+else
+window.location.href="indice_netscape.htm";
+}
+//-->
+</script>
             
         
   <img src="assets/img1.png" width="110" height="140">
       
-<form>
-<select NAME="links" onChange="top.location.href=this.form.links.options[this.form.links.selectedIndex].value">
-<option SELECTED>Elija la sección que desee</option>
-<option VALUE="http://www.pauluk.8k.com">Pauluk Computación</option>
-<option VALUE="http://www.pauluk.8k.com/trucos.htm">Trucos PC</option>
-<option VALUE="http:/www.pauluk.8k.com/noticias.htm">Noticias Tecnológicas</option>
-</select>
-</form>      
+    
       
 
   </script></div><div class="n"><div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="https://key0.cc/images/small/84545_79962d312d1cf9d9b1121cd9db8f9c05.png" width="90" height="90" style=position:fixed;bottom:0;right:0;/></a> </div>
