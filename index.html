@@ -1,3 +1,38 @@
+<!-- Funcion de bloqueo a Copia -->
+<Script language=JavaScript>
+function right(e) {
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+alert("Uff amig@... Lo siento pero no puedes usar el click derecho aqui😜.");
+return false;
+}
+else if (navigator.appName == 'Microsoft Internet Explorer' &&
+(event.button == 2 || event.button == 3)) {
+alert("Uff amigo... Lo siento pero no puedes usar el click derecho aqui😜.");
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<!-- Fin de AntiCopy -->
+
+<!-- Funcion de Hora -->
+<script language="JavaScript">
+<!--
+mensaje=" |======| www.CheNico.com "
+function hora() {
+var h = new Date();
+window.status="|======| "
++ h.getHours() +":"+ h.getMinutes() +"" +mensaje ;
+window.setTimeout('hora()',100);
+}
+hora()
+//-->
+</script>
+<!-- -->
+
 <html>
 <head>
   <title> Samu330 </title>
@@ -10,6 +45,76 @@
     <!-- Fin del Degradado -->
       
     <center> <div class="n"><p>    <b><font color="#FF00FF" face="arial" size="4"><marquee width="400" scrollamount="5" bgcolor="#FFFFFF">Simi Test</marquee></font></b></p></center>      
+      
+      
+      
+      
+<font face="Arial, Helvetica, sans-serif" size="2">
+<script language="JavaScript">
+var timerID = null
+var timerRunning = false
+var charNo = 0
+var charMax = 0
+var lineNo = 0
+var lineMax = 3
+var lineArr = new Array(lineMax)
+var urlArr = new Array(lineMax)
+lineArr[1] = "Pauluk Computación"
+urlArr[1] = "http://www.CheNico.com"
+lineArr[2] = "Trucos PC"
+urlArr[2] = "http://www.pauluk.8k.com/trucosprin.htm"
+lineArr[3] = "Noticias Tecnológicas y Actualidad"
+urlArr[3] = "http://www.pauluk.8k.com/noticias.htm"
+var lineText = lineArr[1]
+function StartShow() {
+StopShow()
+ShowLine()
+timerRunning = true
+}
+function FillSpaces() {
+for (var i = 1; i <= lineWidth; i++) {
+spaces += " "
+}
+}
+function StopShow() {
+if (timerRunning) {
+clearTimeout(timerID)
+timerRunning = false
+}
+}
+function ShowLine() {
+if (charNo == 0) {
+if (lineNo < lineMax) {
+lineNo++
+}
+else {
+lineNo = 1
+}
+lineText = lineArr[lineNo]
+charMax = lineText.length
+}
+if (charNo <= charMax) {
+document.formDisplay.buttonFace.value = lineText.substring(0, charNo)
+charNo++
+timerID = setTimeout("ShowLine()", 100)
+}
+else {
+charNo = 0
+timerID = setTimeout("ShowLine()", 3000)
+}
+}
+function GotoUrl(url)
+{
+top.location.href = url
+}
+document.write("<form name=\"formDisplay\">");
+document.write("<input type=\"button\" name=\"buttonFace\" value=\"&{lineText}\" size=\"18\" onClick=\"GotoUrl(urlArr[lineNo])\">");
+document.write("</form>");
+StartShow();
+</script></font>
+      
+      
+      
       
       </header>
       <body>
@@ -30,20 +135,32 @@ document.onclick=reEnable
 // End -->
 </script>
         
-<style type="text/css">
-<!--
-body { cursor: crosshair}
--->
-</style>
+
       
       <!-- Hora -->
       <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"><span style="color:gray;">Hora actual en</span><br />Mexico City, México</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FMexico_City" width="100%" height="115" frameborder="0" seamless></iframe> </div>
       <!-- Fin de Hora -->
+        
+<!-- Establecimiento como pagina de inicio -->
+<A class=chlnk style="FONT-WEIGHT: bold; CURSOR: hand;
+COLOR: #004080; FONT-FAMILY: Verdana" onclick=
+"this.style.behavior='url(#default#homepage)';
+this.setHomePage('http://www.CheNico.com');">
+<FONT face=Arial color=#000000 size=-2><U>
+Establecer como página de inicio</U></FONT></A>
+<!-- -->
       
   <img src="assets/img1.png" width="110" height="140">
       
       
       <h1> Samu330 Pg </h1>
+        
+
+<a name="1"></a><A
+
+onclick="window.open('assets/head.png','Estructuras','toolbar=no,location=no,scrollbars=yes,directories=
+no,status=no,menubar=no,resizable=no,width=400,height=475');" 
+href="#1"><b><font face="Verdana" size="2">Ejemplo</font></b></a>
       
 
   </script></div><div class="n"><div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="https://key0.cc/images/small/84545_79962d312d1cf9d9b1121cd9db8f9c05.png" width="90" height="90" style=position:fixed;bottom:0;right:0;/></a> </div>
