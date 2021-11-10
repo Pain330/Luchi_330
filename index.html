@@ -19,80 +19,6 @@ window.onmousedown=right;
 <!-- Fin de AntiCopy -->
 
 
-<style>
-<!--
-.entrada{
-position:absolute;
-left:0;
-top:0;
-layer-background-color:green;
-background-color:green;
-border:0.1px solid green
-}
--->
-</style>
-<div id="i1" class="entrada"></div>
-<div id="i2" class="entrada"></div>
-<div id="i3" class="entrada"></div>
-<div id="i4" class="entrada"></div>
-<div id="i5" class="entrada"></div>
-<div id="i6" class="entrada"></div>
-<div id="i7" class="entrada"></div>
-<div id="i8" class="entrada"></div>
-<script language="JavaScript1.2">
-//
-var velocidade=10
-var tempo=new Array()
-var tempo2=new Array()
-if (document.layers){
-for (i=1;i<=8;i++){
-tempo[i]=eval("document.i"+i+".clip")
-tempo2[i]=eval("document.i"+i)
-tempo[i].width=window.innerWidth/8-0.3
-tempo[i].height=window.innerHeight
-tempo2[i].left=(i-1)*tempo[i].width
-}
-}
-else if (document.all){
-var clipbottom=document.body.offsetHeight,cliptop=0
-for (i=1;i<=8;i++){
-tempo[i]=eval("document.all.i"+i+".style")
-tempo[i].width=document.body.clientWidth/8
-tempo[i].height=document.body.offsetHeight
-tempo[i].left=(i-1)*parseInt(tempo[i].width)
-}
-}
-function openit(){
-window.scrollTo(0,0)
-if (document.layers){
-for (i=1;i<=8;i=i+2)
-tempo[i].bottom-=velocidade
-for (i=2;i<=8;i=i+2)
-tempo[i].top+=velocidade
-if (tempo[2].top>window.innerHeight)
-clearInterval(stopit)
-}
-else if (document.all){
-clipbottom-=velocidade
-for (i=1;i<=8;i=i+2){
-tempo[i].clip="rect(0 auto+"+clipbottom+" 0)"
-}
-cliptop+=velocidade
-for (i=2;i<=8;i=i+2){
-tempo[i].clip="rect("+cliptop+" auto auto)"
-}
-if (clipbottom<=0)
-clearInterval(stopit)
-}
-}
-function gogo(){
-stopit=setInterval("openit()",100)
-}
-gogo()
-</script>
-
-
-
 
 <html>
 <head>
@@ -153,44 +79,14 @@ document.write("<b><font face=arial size=2 color=#000000>¡Hola "+mensagem+"! Bi
         
   <img src="assets/img1.png" width="110" height="140">
       
-      
-<script language="JavaScript">
-<!--
-done = 0;
-step = 4
-function anim(yp,yk)
-{
-if(document.layers) document.layers["texto"].top=yp;
-else document.all["texto"].style.top=yp;
-if(yp>yk) step = -4
-if(yp<60) step = 4
-setTimeout('anim('+(yp+step)+','+yk+')', 35);
-}
-function start()
-{
-if(done) return
-done = 1;
-if(navigator.appName=="Netscape") {
-document.texto.left=innerWidth/2 - 145;
-anim(60,innerHeight - 60)
-}
-else {
-texto.style.left=11;
-anim(60,document.body.offsetHeight - 60)
-}
-}
-// --></script>
-
-<div id="texto" style="position: absolute; top: -50; color: #FF8000; font-family: Arial, Helvetica; font-weight:bold; font-size:40px;">
-<p><font face="Arial, Helvetica, sans-serif" size="3"><b><font size="6" color="#990000">Samu330</font></b></font></p>
-</div>
-
-<script language="JavaScript">
-<!--
-setTimeout('start()',10);
-//-->
-</script>
-        
+<form>
+<select NAME="links" onChange="top.location.href=this.form.links.options[this.form.links.selectedIndex].value">
+<option SELECTED>Elija la sección que desee</option>
+<option VALUE="http://www.pauluk.8k.com">Pauluk Computación</option>
+<option VALUE="http://www.pauluk.8k.com/trucos.htm">Trucos PC</option>
+<option VALUE="http:/www.pauluk.8k.com/noticias.htm">Noticias Tecnológicas</option>
+</select>
+</form>      
       
 
   </script></div><div class="n"><div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="https://key0.cc/images/small/84545_79962d312d1cf9d9b1121cd9db8f9c05.png" width="90" height="90" style=position:fixed;bottom:0;right:0;/></a> </div>
