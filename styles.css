@@ -1,5 +1,5 @@
 .bg {
- background: linear-gradient(#00ffff 80%, #ffffff);   
+ background: radial-gradient(circle at top left, #00ffff, #ff00ff)
 }
 
 button {
