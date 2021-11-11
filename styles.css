@@ -1,7 +1,7 @@
 button {
     display: block;
     margin: 20px auto;
-    background: salmon;
+    background: deepskyblue;
     color: white;
     border: 0;
     padding: 6px 10px;
@@ -9,12 +9,12 @@ button {
 }
  
 button:hover {
-    background: palevioletred;
+    background: deeppink;
     transition: all 0.2s;
 }
  
 .popup-wrapper {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ button:hover {
 }
  
 .popup a {
-    background: salmon;
+    background: deepskyblue;
     color: white;
     text-decoration: none;
     padding: 6px 10px;
@@ -45,7 +45,7 @@ button:hover {
 }
  
 .popup a:hover {
-    background: palevioletred;
+    background: deeppink;
     transition: all 0.2s;
 }
  
