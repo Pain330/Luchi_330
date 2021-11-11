@@ -18,28 +18,6 @@ window.onmousedown=right;
 </script>
 <!-- Fin de AntiCopy -->
 
-<script language="JavaScript">
-tempo = 10;
-chars = 5;
-texto = "-- Samu330 --";
-wtexto = new Array(33);
-wtexto[0] = texto;
-blnk = " ";//Mantén estos espacios
-for (i = 1; i < 32; i++) {
-b = blnk.substring(0, i);
-wtexto[i] = "";
-for (j = 0; j < texto.length; j++) wtexto[i] = wtexto[i] + texto.charAt(j) + b;
-}
-function animastatus() {
-if (chars > -1) str = wtexto[chars];
-else str = wtexto[0];
-if (chars-- < -40) chars = 31;
-status = str;
-clearTimeout(tempo);
-tempo = setTimeout("animastatus()", 150);
-}
-animastatus()
-</script>
 
 <html>
 <head>
@@ -60,22 +38,9 @@ animastatus()
     
       <body>    
 
-        
-<script language="Javascript">
-<!-- Begin
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+<BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  
+<BODY onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');">
         
         
 <Script language="JavaScript">
