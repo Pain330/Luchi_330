@@ -57,14 +57,8 @@ document.write("<b><font face=arial size=2 color=#000000>¡Hola "+mensagem+"! Bi
     
       <body>   
         
-    
-        
-<bgsound src="assets/song.mp3">
-  
-<audio autoplay>
-  <source src="assets/song.mp3" type="audio/mpeg" autoplay="true">
-  Your browser does not support the audio element.
-</audio>
+   
+<audio src="assets/song.mp3" autoplay></audio>
         
 
 <BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
@@ -73,7 +67,7 @@ document.write("<b><font face=arial size=2 color=#000000>¡Hola "+mensagem+"! Bi
   
       
       <!-- Hora -->
-      <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"><span style="color:gray;">Hora actual en</span><br />Mexico City, México</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FMexico_City" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+      <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"><span style="color:gray;">Hora actual en</span><br />Mexico City, México</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FMexico_City" onclick="return clickfunc(false)" width="100%" height="115" frameborder="0" seamless></iframe> </div>
       <!-- Fin de Hora -->
   
 <H2>Informe</H2>
