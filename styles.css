@@ -14,7 +14,7 @@ button:hover {
 }
  
 .popup-wrapper {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
