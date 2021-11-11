@@ -1,3 +1,7 @@
+.bg {
+ background: linear-gradient(#ffffff, #ffff00);   
+}
+
 button {
     display: block;
     margin: 20px auto;
