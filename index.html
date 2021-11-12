@@ -1,25 +1,3 @@
-<!-- Funcion de bloqueo a Copia -->
-<Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Uff amig@... Lo siento pero no puedes usar el click derecho aqui😜.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Uff amigo... Lo siento pero no puedes usar el click derecho aqui😜.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script>
-<!-- Fin de AntiCopy -->
-
-<audio src="assets/song.mp3" autoplay></audio>
-
 <html>
 <head>
   
@@ -41,7 +19,7 @@ window.onmousedown=right;
       
 <!-- Bienvenida -->
 <Script language="JavaScript">
-mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
+mensagem = prompt("Hola, porfavor ingresa tu Nombre",'xd');
 if (mensagem==null) {
 swal("¡Hola!", "Bienvenido a SimiTest!!");
 }else{
@@ -70,9 +48,14 @@ animation: false
     <body bgcolor=<div class="bg"></div>
         
         
-<BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<BODY onselectstart="return false" ondragstart="return false">
   
-<BODY onLoad="alert('Bienvenido a SimiTest!!');" onUnLoad="confirm('Gracias por tu visita, espero verte pronto aqui!!');">
+<script type='text/javascript'>
+	document.oncontextmenu = function(){return false}
+  swal("Lo siento!", "No puedes hacer uso del Click Derecho!", "error");
+</script>
+  
+
   
       
       <!-- Hora -->
@@ -93,48 +76,6 @@ animation: false
     </div>
     
     <script src="popup.js"></script>
-  
-  
-  
-  
-  
- 
-        <tr>
-                <button type="button" class="btn btn-focus m-btn m-btn--custom" id="xdSm330">
-                    Show me
-                </button>
-        </tr>
-  
-
-    <script>
-        //== Class definition
-        var SweetAlert2Demo = function () {
-
-            //== Demos
-            var initDemos = function () {
-                
-
-                //== Sweetalert Demo 2
-                $('#xdSm330').click(function (e) {
-                    swal("Hola xD", "Close it!!");
-                });
-            };
-
-            return {
-                //== Init
-                init: function () {
-                    initDemos();
-                },
-            };
-        }();
-
-        //== Class Initialization
-        jQuery(document).ready(function () {
-            SweetAlert2Demo.init();
-        });
-    </script>
-  
-  
   
   
   
