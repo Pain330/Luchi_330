@@ -14,6 +14,7 @@
   
 <!-- Funcion AntiSelect & Click Derecho -->
 <script language="JavaScript" type="text/javascript">
+document.oncontextmenu = function(){return false}
 function click(){
 if(event.button==2){
 swal("ALTO AHI!", "No puedes hacer uso del Click Derecho!", "warning");
@@ -21,10 +22,7 @@ swal("ALTO AHI!", "No puedes hacer uso del Click Derecho!", "warning");
 }
 document.onmousedown=click  
 </script>
-<script language="Javascript" type="text/javascript">
-document.oncontextmenu = function(){return false}
-</script>
-  
+
 <script language="Javascript" type="text/javascript">
 function disableselect(e){
 return false
@@ -39,7 +37,63 @@ document.onclick=reEnable
 }
 </script>
 <!-- Fin  de Funcion AntiSelect & Click Derecho -->
+  
+<script language="Javascript" type="text/javascript">
+document.onkeypress = function(event) {
 
+  event = (event || window.event);
+
+  if (event.keyCode == 123) {
+
+    return false;
+
+  }
+
+  if (event.which == 123) {
+
+    return false;
+
+  }
+
+}
+
+document.onmousedown = function(event) {
+
+  event = (event || window.event);
+
+  if (event.keyCode == 123) {
+
+    return false;
+
+  }
+
+  if (event.which == 123) {
+
+    return false;
+
+  }
+
+}
+
+document.onkeydown = function(event) {
+
+  event = (event || window.event);
+
+  if (event.keyCode == 123) {
+
+    return false;
+
+  }
+
+  if (event.which == 123) {
+
+    return false;
+
+  }
+
+}
+</script>
+  
 </head>
   
   <header>
