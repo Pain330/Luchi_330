@@ -27,14 +27,12 @@ if (mensagem=='') {
 swal("No ingresaste tu nombre!", "Porfavor ingresa tu nombre para la proxima!", "error");
 }else{
 swal({
-title: 'Hola',
-text: 'Bienvenido a SimiTest!!',
-imageUrl: 'http://pngimg.com/uploads/simpsons/simpsons_PNG2.png',
-imageWidth: 400,
-imageHeight: 200,
-imageAlt: 'Custom image',
-animation: false
-});
+position: 'top-right',
+type: 'success',
+showConfirmButton: false,
+timer: 2000,
+title: "Hola + "mensagem" + !"
+})
 }
 }
 </script>
