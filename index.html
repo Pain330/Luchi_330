@@ -37,60 +37,11 @@ document.onclick=reEnable
 }
 </script>
 <!-- Fin  de Funcion AntiSelect & Click Derecho -->
-  
-<script language="Javascript" type="text/javascript">
-document.onkeypress = function(event) {
-
-  event = (event || window.event);
-
-  if (event.keyCode == 123) {
-
-    return false;
-
-  }
-
-  if (event.which == 123) {
-
-    return false;
-
-  }
-
-}
-
-document.onmousedown = function(event) {
-
-  event = (event || window.event);
-
-  if (event.keyCode == 123) {
-
-    return false;
-
-  }
-
-  if (event.which == 123) {
-
-    return false;
-
-  }
-
-}
-
-document.onkeydown = function(event) {
-
-  event = (event || window.event);
-
-  if (event.keyCode == 123) {
-
-    return false;
-
-  }
-
-  if (event.which == 123) {
-
-    return false;
-
-  }
-
+ 
+<script language="JavaScript">
+function checkKey(evt) {
+if (evt.ctrlKey)
+alert("boton control deshabilitado");
 }
 </script>
   
