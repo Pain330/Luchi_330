@@ -19,17 +19,17 @@
       
 <!-- Bienvenida -->
 <Script language="JavaScript">
-mensagem = prompt("Hola, porfavor ingresa tu Nombre",'xd');
+mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
 if (mensagem==null) {
-swal("¡Hola!", "Bienvenido a SimiTest!!");
+swal("No ingresaste tu nombre!", "Porfavor ingresa tu nombre para la proxima!", "error");
 }else{
 if (mensagem=='') {
-swal("¡Hola!", "Bienvenido a SimiTest!!");
+swal("No ingresaste tu nombre!", "Porfavor ingresa tu nombre para la proxima!", "error");
 }else{
 swal({
-title: '¡Hola "+mensagem+"!',
+title: "¡Hola + "mensagem"!",
 text: 'Bienvenido a SimiTest!!',
-imageUrl: 'assets/eye.png',
+imageUrl: 'http://pngimg.com/uploads/simpsons/simpsons_PNG2.png',
 imageWidth: 400,
 imageHeight: 200,
 imageAlt: 'Custom image',
@@ -48,14 +48,7 @@ animation: false
     <body bgcolor=<div class="bg"></div>
         
         
-<BODY onselectstart="return false" ondragstart="return false">
-  
-<script type='text/javascript'>
-	document.oncontextmenu = function(){return false}
-  swal("Lo siento!", "No puedes hacer uso del Click Derecho!", "error");
-</script>
-  
-
+<BODY  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
   
       
       <!-- Hora -->
