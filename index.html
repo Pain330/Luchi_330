@@ -19,14 +19,14 @@
       
 <!-- Bienvenida -->
 <Script language="JavaScript">
-mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
+var mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
 if (mensagem==null) {
 swal("No ingresaste tu nombre!", "Porfavor ingresa tu nombre para la proxima!", "error");
 }else{
 if (mensagem=='') {
 swal("No ingresaste tu nombre!", "Porfavor ingresa tu nombre para la proxima!", "error");
 }else{
-swal("Hola + "mensagem" + !", "Bienvenido!", "success");
+swal("Hola" + mensagem + "!", "Bienvenido!", "success");
 }
 }
 </script>
