@@ -56,12 +56,7 @@ return false;
   
 </head>
   
-  <header>
-   
-<audio controls autoplay>
-  	<source src="assets/song.mp3" type="audio/mp3">
-  	Tu navegador no soporta HTML5 audio.
-</audio>    
+  <header>  
 
 <!-- Bienvenida -->
 <Script language="JavaScript">
@@ -91,10 +86,18 @@ swal("Hola " + mensagem + "!", "Bienvenido!", "success")
     </div>
     
 <script src="popup.js"></script>
-            
+   
 </header>
     
 <body bgcolor=<div class="bg">
+    
+<Script language="JavaScript">
+var audio = document.createElement("audio");
+audio.preload = "auto";
+audio.src = "assets/song.mp3";
+audio.play();
+document.body.appendChild(audio); 
+</Script>
   
       
       <!-- Hora -->
