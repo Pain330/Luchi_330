@@ -43,13 +43,20 @@ window.onmousedown=right;
 <Script language="JavaScript">
 mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
 if (mensagem==null) {
-document.write("¡Hola, bienvenido!")
+swal("¡Hola!", "Bienvenido a SimiTest!!");
 }else{
 if (mensagem=='') {
-document.write("<b><font face=arial size=2 color=#000000>¡Hola, bienvenido!</font></b>")
+swal("¡Hola!", "Bienvenido a SimiTest!!");
 }else{
-document.write("<b><font face=arial size=2 color=#000000>¡Hola "+mensagem+"! Bienvenido a SimiTest!!</font></b>");
-swal("¡Hola "+mensagem+"!", "Bienvenido a SimiTest!!");
+swal({
+title: '¡Hola "+mensagem+"!',
+text: 'Bienvenido a SimiTest!!',
+imageUrl: 'assets/eye.png',
+imageWidth: 400,
+imageHeight: 200,
+imageAlt: 'Custom image',
+animation: false
+});
 }
 }
 </script>
