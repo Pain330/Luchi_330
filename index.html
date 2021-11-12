@@ -38,23 +38,21 @@ document.onclick=reEnable
 </script>
 <!-- Fin  de Funcion AntiSelect & Click Derecho -->
  
-
+<!-- Funcion Para deshabilitar la combinacion CTRL+U -->
 <script type="text/x-javascript">
-//codigo javascript
- 
 var isCtrl = false;
 document.onkeyup=function(e){
 if(e.which == 17) isCtrl=false;
 }
 document.onkeydown=function(e){
 if(e.which == 17) isCtrl=true;
-if(e.which == 80 && isCtrl == true) {
-//Combinancion de teclas CTRL+P y bloquear su ejecucion en el navegador
+if(e.which == 85 && isCtrl == true) {
+swal("ERROR!", "No puedes Acceder a ver el Codigo Fuente de Esta Pagina!", "error");
 return false;
 }
 }
 </script>
-  
+<!-- Fin de la Funcion Para deshabilitar la combinacion CTRL+U -->
   
 </head>
   
