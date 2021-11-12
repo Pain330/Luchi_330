@@ -12,15 +12,31 @@
   <meta charset="utf-8">
   
   
-  
+<!-- Funcion AntiSelect & Click Derecho -->
 <script language="JavaScript" type="text/javascript">
 function click(){
 if(event.button==2){
 swal("ALTO AHI!", "No puedes hacer uso del Click Derecho!", "warning");
 }
 }
-document.onmousedown=click
+document.oncontextmenu = function(){return false}
 </script>
+  
+<script language="Javascript" type="text/javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+swal("ALTO AHI!", "No puedes Seleccionar ni copiar textos!", "warning");
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+<!-- Fin  de Funcion AntiSelect & Click Derecho -->
 
 </head>
   
