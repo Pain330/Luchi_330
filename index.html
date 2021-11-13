@@ -98,13 +98,13 @@ swal("Hola " + mensagem + "!", "Bienvenido!", "success")
 
 var fallObjects=new Array();function newObject(url,height,width){fallObjects[fallObjects.length]=new Array(url,height,width);}
 
-var numObjs=20, waft=50, fallSpeed=20, wind=0;
+var numObjs=40, waft=50, fallSpeed=20, wind=0;
 
 newObject("https://2.bp.blogspot.com/-rIkMhmr_Lr0/UL2KG2v7dVI/AAAAAAAAnuQ/vKWEA6Drh2k/s1600/copo+de+nieve+,png.png",05,05);
 
 newObject("https://4.bp.blogspot.com/-CDtA2RY3Q2E/UL2KHonEpWI/AAAAAAAAnuY/eOUj2lH18AA/s1600/copo+de+nieve,png+christmas+(1).png",05,05);
 
-function winSize(){winWidth=(moz)?window.innerWidth-180:document.body.clientWidth-180;winHeight=(moz)?window.innerHeight+500:document.body.clientHeight+500;}
+function winSize(){winWidth=(moz)?window.innerWidth-10:document.body.clientWidth-10;winHeight=(moz)?window.innerHeight+30:document.body.clientHeight+30;}
 
 function winOfy(){winOffset=(moz)?window.pageYOffset:document.body.scrollTop;}
 
