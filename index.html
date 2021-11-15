@@ -50,8 +50,6 @@ document.onclick=reEnable
 
     <div class="body-wrap">
 	    
-<div id="particle-div"></div>
-	    
         <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
@@ -96,11 +94,17 @@ document.onclick=reEnable
             </section>
 		
 		
-		<button id="particle-button">Iniciar</button>
+<div id="particle-div"></div>
+<button id="particle-button">Start</button>
+#particle-div {
+margin: 0 auto;
+width:800px;
+height:500px;
+}	
 		
 		<script>
-			$("particle-button").click(function(){
-				particlesJS.load("particle-div", "particle-cfg.json");
+			$("#particle-button").click(function(){
+			particlesJS.load('particle-div','particle-cfg.json');  
 			});
 		</script>
 		
