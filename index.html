@@ -14,8 +14,9 @@
     <title>Sm330 | Pg DEMO</title>
     <link rel="shortcut icon" href="https://www.pnguniverse.com/wp-content/uploads/2020/10/Traje-azul-medio-cuerpo.png">
     <link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="particles.json"></script>
 	
 	
 <!-- Funcion AntiSelect & Click Derecho -->
@@ -45,9 +46,11 @@ document.onclick=reEnable
 <!-- Fin  de Funcion AntiSelect & Click Derecho -->
 	
 </head>
-<body id="particles-js" class="is-boxed has-animations">
-	
+<body class="is-boxed has-animations">
+
     <div class="body-wrap">
+	    
+<div id="particle-div"></div>
 	    
         <header class="site-header">
             <div class="container">
@@ -91,6 +94,16 @@ document.onclick=reEnable
                     </div>
                 </div>
             </section>
+		
+		
+		<button id="particle-button">Iniciar</button>
+		
+		<script>
+			$("particle-button").click(function(){
+				particlesJS.load("particle-div", "particle-cfg.json");
+			});
+		</script>
+		
 		
 <div align="center">
 		
@@ -240,8 +253,6 @@ document.onclick=reEnable
     </div>
 
     <script src="dist/js/main.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="particulas.js"></script>
 	
 </body>
 </html>
