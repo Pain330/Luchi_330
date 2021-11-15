@@ -16,22 +16,40 @@
     <link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	
+	
+<!-- Funcion AntiSelect & Click Derecho -->
+<script language="JavaScript" type="text/javascript">
+document.oncontextmenu = function(){return false}
+function click(){
+if(event.button==2){
+swal("ALTO AHI!", "No puedes hacer uso del Click Derecho!", "warning");
+}
+}
+document.onmousedown=click  
+</script>
+
+<script language="Javascript" type="text/javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+<!-- Fin  de Funcion AntiSelect & Click Derecho -->
+	
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-				<a href="#">
-					<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
 	    
+        <header class="site-header">
+		
 <Script language="JavaScript">
 var mensagem = prompt("Hola, porfavor ingresa tu Nombre",'');
 if (mensagem=='null') {
@@ -45,6 +63,17 @@ swal("Hola " + mensagem + "!", "Bienvenido!", "success")
 </script>
 <!-- Fin Bienvenida -->
 		
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+				<a href="#">
+					<img class="header-logo-image" src="assets/" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>		
         </header>
 
 
