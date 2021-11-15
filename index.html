@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//github.s3.amazonaws.com/downloads/kopipejst/jqSnow/jquery.snow.min.1.0.js"></script>
 	
 	
 <!-- Funcion AntiSelect & Click Derecho -->
@@ -74,6 +76,18 @@ swal("Hola " + mensagem + "!", "Bienvenido!", "success")
 }
 </script>
 <!-- Fin Bienvenida -->
+	    
+	    
+<script>
+$(document).ready( function(){
+ $.fn.snow({
+ minSize: 10, //Tamaño mínimo del copo de nieve, 10 por defecto
+ maxSize: 20, //Tamaño máximo del copo de nieve, 10 por defecto
+ newOn: 1500, //Frecuencia (en milisegundos) con la que aparecen los copos de nieve, 500 por defecto
+ flakeColor: '#00FFFF' //Color del copo de nieve, #FFFFFF por defecto
+ });
+}); 
+</script>
 	
 	    
         <main>
