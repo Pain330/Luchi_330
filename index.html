@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-	<script src="particles.json"></script>
 	
 	
 <!-- Funcion AntiSelect & Click Derecho -->
@@ -46,7 +45,7 @@ document.onclick=reEnable
 <!-- Fin  de Funcion AntiSelect & Click Derecho -->
 	
 </head>
-<body class="is-boxed has-animations">
+<body id="particles-js" class="is-boxed has-animations">
 
     <div class="body-wrap">
 	    
@@ -64,6 +63,8 @@ document.onclick=reEnable
             </div>		
         </header>
 
+<script src="http://falconmasters.com/demos/particulas/particles.min.js"></script>
+<script src="http://falconmasters.com/demos/particulas/particulas.js"></script>
 
         <main>
             <section class="hero">
@@ -93,22 +94,7 @@ document.onclick=reEnable
                 </div>
             </section>
 		
-		
-<div id="particle-div"></div>
-<button id="particle-button">Start</button>
-#particle-div {
-margin: 0 auto;
-width:800px;
-height:500px;
-}	
-		
-		<script>
-			$("#particle-button").click(function(){
-			particlesJS.load('particle-div','particle-cfg.json');  
-			});
-		</script>
-		
-		
+
 <div align="center">
 		
 <button>Mas Informacion</button>
