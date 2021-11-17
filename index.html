@@ -134,13 +134,7 @@ $(document).ready(function() {
 	
 	
 	
-<Script language="JavaScript">
-var h1 = document.querySelector("h1");
 
-h1.addEventListener("input", function() {
-    this.setAttribute("data-heading", this.innerText);
-});	
-</script>
 <style type="text/css">
 $color1: white;
 $color2: black;
@@ -211,6 +205,13 @@ h1 {
 	font-weight: 700;
 }
 </style>
+<Script language="JavaScript">
+var h1 = document.querySelector("h1");
+
+h1.addEventListener("input", function() {
+    this.setAttribute("data-heading", this.innerText);
+});	
+</script>
 	
 	
 </head>
@@ -268,6 +269,10 @@ $(document).ready( function(){
   Your browser does not support the audio element.
 </audio>
 		
+<h1 contenteditable data-heading="Frozen">
+	Samu330
+</h1>
+		
             <section class="hero">
                 <div class="container">
                     <div class="hero-inner">
@@ -294,10 +299,6 @@ $(document).ready( function(){
                     </div>
                 </div>
             </section>
-		
-<h1 contenteditable data-heading="Frozen">
-	Frozen
-</h1>
 
 <div align="center">
 		
