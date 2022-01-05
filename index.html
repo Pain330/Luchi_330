@@ -131,25 +131,6 @@ $(document).ready(function() {
 });
 </script>
 <!-- -->
-	
-
-<style>
-    /* Contenedores exteriores de ambos slider imágenes, con dimensiones
-       para evitar reflujo y repintado */
-    #slider1, #slider2 {
-       float: left;
-       width: 200px;
-       border: gray solid 1px;
-       padding: 0.2em;
-       margin: 0 0.2em 0.2em 0;
-    }
-    #slider1 {
-        height: 280px;
-    }
-    #slider2 {
-        height: 220px;
-    }
-</style>
 
 	
 </head>
@@ -241,14 +222,45 @@ $(document).ready( function(){
 </div>
 
 
-<div id="slider2">
-    <div class="slider-imagen"
-    data-lista="lista.txt"
-    data-ancho="200" data-alto="200"
-    data-direccion="vertical" data-rotacion="vaiven"
-    data-avance="-1" data-auto
-    data-pie-style="height: 20px; font: 0.8em 'Arial Narrow'"></div>
-</div> 
+
+
+<style type="text/css">
+#animacion{padding:0;
+	margin:0 auto;
+	height: 364px;
+	width: 960px;}
+ 
+#animacion img{ position:absolute;
+	top: 0;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;}
+ 
+#animacion img.novisible{
+	opacity:0;
+	filter:alpha(opacity=0);}
+ 
+#animacion:hover img.novisible{
+	opacity:1;
+	filter:alpha(opacity=100);}
+ 
+#animacion:hover img.visible {
+	opacity:0;
+	filter:alpha(opacity=0);}
+ 
+#animacion img.visible:hover {
+	opacity:0;
+	filter:alpha(opacity=0);} 
+</style>
+
+<div id="animacion">
+		<img class="novisible" src="assets/eye.png" >
+		<img class="visible" src="assets/eye.png" >
+	</div>
+
+
+
 
 
 <div id="particles-js"></div
