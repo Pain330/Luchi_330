@@ -1,0 +1,11 @@
+var lista = [
+    "assets/eye.png | Pie de foto\n" +
+    "assets/eye.png | Pie de foto\n" +
+    "assets/eye.png | Pie de foto\n"
+    ,
+    "assets/eye.png | Pie de foto\n" +
+    "assets/eye.png | Pie de foto\n" +
+    "assets/eye.png | Pie de foto\n"
+];
+
+cargarSliderImg(lista);
