@@ -132,6 +132,25 @@ $(document).ready(function() {
 </script>
 <!-- -->
 	
+
+<style>
+    /* Contenedores exteriores de ambos slider imágenes, con dimensiones
+       para evitar reflujo y repintado */
+    #slider1, #slider2 {
+       float: left;
+       width: 200px;
+       border: gray solid 1px;
+       padding: 0.2em;
+       margin: 0 0.2em 0.2em 0;
+    }
+    #slider1 {
+        height: 280px;
+    }
+    #slider2 {
+        height: 220px;
+    }
+</style>
+
 	
 </head>
 <body class="is-boxed has-animations">
@@ -220,6 +239,17 @@ $(document).ready( function(){
 
 <div class="g-ytsubscribe" data-channelid="UCHD4T8Pfcv5PFVzsAbfAPZA" data-layout="full" data-count="hidden"></div>
 </div>
+
+
+<div id="slider2">
+    <div class="slider-imagen"
+    data-lista="assets/eye.png"
+    data-ancho="200" data-alto="200"
+    data-direccion="vertical" data-rotacion="vaiven"
+    data-avance="-1" data-auto
+    data-pie-style="height: 20px; font: 0.8em 'Arial Narrow'"></div>
+</div> 
+
 
 <div id="particles-js"></div
 
