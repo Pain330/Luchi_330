@@ -529,7 +529,7 @@ Swipa
 Lo único que tienes que hacer es reaccionar a publicaciones de otras personas, y así obtienes monedas las cuáles puedes canjear por reacciones en tus publicaciones!! 🧾"</span></p><br><br>
 
 <center>
-<a href="https://play.google.com/store/apps/details?id=com.swipa"  id="button-play-v-once"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSWgTUZBwctV7tb1UxrlCqMJcmJI52OAR7w" width="400" height="100"" /></a><br><br>
+<a href="https://play.google.com/store/apps/details?id=com.swipa"  id="button-play-v-once1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSWgTUZBwctV7tb1UxrlCqMJcmJI52OAR7w" width="400" height="100"" /></a><br><br>
 
 
 <div style="background-color: #FF0000; border-radius: 17px; border: 0px solid rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px; color: white; font-family: arial, sans-serif; font-size: 18px; font-stretch: normal; font-style: normal; font-variant: normal; line-height: normal; margin: 0px auto; padding: 4px 5px 3px; width: 70%;">
@@ -545,7 +545,7 @@ Huwi.mx
 Pero la aplicación esta pasable!!"</span></p><br><br> 
 
 <center>
-<a href="https://play.google.com/store/apps/details?id=io.huwi.stable" id="button-play-v-once"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSWgTUZBwctV7tb1UxrlCqMJcmJI52OAR7w&usqp=CAU" width="400" height="100" /></a><br><br>
+<a href="https://play.google.com/store/apps/details?id=io.huwi.stable" id="button-play-v-once2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSWgTUZBwctV7tb1UxrlCqMJcmJI52OAR7w&usqp=CAU" width="400" height="100" /></a><br><br>
 
 <br></br>   
    
@@ -563,11 +563,17 @@ Invitame una Pizza
       window.navigator = window.navigator || {};
       if (navigator.vibrate === undefined) {
           document.getElementById('v-unsupported').classList.remove('hidden');
-          ['button-play-v-once', 'button-play-v-thrice', 'button-stop-v'].forEach(function(elementId) {
+          ['button-play-v-once', 'button-play-v-once1', 'button-play-v-once2', 'button-play-v-thrice', 'button-stop-v'].forEach(function(elementId) {
             document.getElementById(elementId).setAttribute('disabled', 'disabled');
           });
       } else {
           document.getElementById('button-play-v-once').addEventListener('click', function() {
+            navigator.vibrate(3000);
+          });
+	  document.getElementById('button-play-v-once1').addEventListener('click', function() {
+            navigator.vibrate(3000);
+          });
+	  document.getElementById('button-play-v-once2').addEventListener('click', function() {
             navigator.vibrate(3000);
           });
           document.getElementById('button-play-v-thrice').addEventListener('click', function() {
