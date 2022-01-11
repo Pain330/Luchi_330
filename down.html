@@ -563,7 +563,7 @@ Invitame una Pizza
       window.navigator = window.navigator || {};
       if (navigator.vibrate === undefined) {
           document.getElementById('v-unsupported').classList.remove('hidden');
-          ['button-play-v-once', 'button-play-v-thrice', 'button-stop-v'].forEach(function(elementId) {
+          ['button-play-v-once', 'button-play-v-once1', 'button-play-v-once2', 'button-play-v-thrice', 'button-stop-v'].forEach(function(elementId) {
             document.getElementById(elementId).setAttribute('disabled', 'disabled');
           });
       } else {
