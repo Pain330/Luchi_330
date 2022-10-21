@@ -62,6 +62,21 @@ return false;
 </script>
 <!-- Fin de la Funcion Para deshabilitar la combinacion CTRL+U -->
 	
+<!-- Funcion de Like -->
+<script language="javascript">
+var i = 0;
+ 
+function contador()
+{
+i = i + 1;
+var btn = document.getElementById("boton");
+btn.value = "Presiona Aqui (" + i + ")";
+}
+</script>
+ 
+<input type="button" id="boton" value="Presiona Aqui" onclick="javascript: contador()" />
+<!-- Fin Funcion de Like -->
+
 <!-- Funcion de Ir Arriba -->
 <script type='text/javascript'>
 $(document).ready(function(){ 
@@ -361,6 +376,8 @@ $(document).ready( function(){
 		    
 	     <h3>♣️Muy pronto habrá más juegos, si tienes alguna recomendación, escribe en cualquiera de mis redes sociales♣️<h3>
 	     
+          <div class='post-footer'>
+
         <footer class="site-footer">
             <div class="container">
                 <div class="site-footer-inner">
