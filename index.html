@@ -70,8 +70,9 @@ function contador()
 {
 i = i + 1;
 var btn = document.getElementById("boton");
-btn.value = "Presiona Aqui (" + i + ")";
+btn.value = "Like (" + i + ")";
 }
+<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.url+ &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;height=40&amp;action=like&amp;font=tahoma&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:450px; height:40px'/>
 </script>
  
 <input type="button" id="boton" value="Presiona Aqui" onclick="javascript: contador()" />
