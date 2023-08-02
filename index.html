@@ -345,7 +345,7 @@ $(document).ready( function(){
 		    
 		    <center>     <h2>Asphalt nitro 2<h2> <center>
 	<center> <img src="assets/asphalt.png" alt="Feature 01" width="150px">  </center>
-            <h3>La ultima entrega de asphalt, cargada de emocionantes pistas y vehiculos de maracas conocidas, Que esperas para empezar a correr?<h3>             
+            <h3>La ultima entrega de asphalt, cargada de emocionantes pistas y vehiculos de marcas conocidas, Que esperas para empezar a correr?<h3>             
 	     <p>Peso: 89mb<p>
 	 <p>Link por mega<p> 
          <p>Mod: dinero infinito<p>
@@ -362,14 +362,27 @@ $(document).ready( function(){
 						</div> <br>
 		    
 	     <h3>♣️Muchas gracias por tu visita! esta pagina por el momento no recibira actualizaciones.♣️<h3>
-	     
+
+
+		       <p>Te ha gustado la pagina? Dael lik si es asi! </p>
+    <button id="likeButton" onclick="incrementLikes()">👍 Me Gusta</button>
+    <p id="likesCount">0 Likes</p>
+
+    <script>
+        let likes = 0;
+
+        function incrementLikes() {
+            likes++;
+            document.getElementById('likesCount').textContent = `${likes} Likes`;
+        }
+	    
           <div class='post-footer'>
 
         <footer class="site-footer">
             <div class="container">
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
-						<a href="https://www.instagram.com/luchiano_nicolas" target="_blank">
+						<a href="https://www.instagram.com/_luciano_nicolas" target="_blank">
 							<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
 						</a>
                     </div>
@@ -392,7 +405,7 @@ $(document).ready( function(){
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/search?q=luchiano_nicolas" target="_blank">
+                            <a href="https://instagram.com/_luciano_nicolas?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
                                 <span class="screen-reader-text">Google</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
@@ -400,7 +413,7 @@ $(document).ready( function(){
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2022 Luciano Maidana, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2023 Luciano Maidana, all rights reserved</div>
                 </div>
             </div>
         </footer>
